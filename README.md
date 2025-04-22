@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub User Profile Search
 
-## Getting Started
+A sleek and responsive GitHub user search app built with **Next.js** and **TypeScript**. Users can search for any GitHub username and instantly view their profile, including avatar, bio, public repositories, and followers — all powered by the GitHub public API.
 
-First, run the development server:
+## Features
+- Search for a GitHub user by username.
+- Displays user avatar, bio, repositories count, and followers count.
+- Shows error message if user is not found.
+- Fully responsive for both desktop and mobile screens.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/Majeedatwahab/github-user-search.git
+   ```
 
-## Learn More
+2. Navigate to the project folder:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd github-user-search
+   ```
+3. Install the required dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Start the development server:
 
-## Deploy on Vercel
+   ```bash
+   npm start
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open your browser and go to `http://localhost:3000` to see the app in action.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  
+## Technologies Used
+1. React (with functional components)
+2. Next.js (for server-side rendering and routing)
+3. TypeScript (for static typing)
+4. TailwindCSS (for styling)
+5. GitHub API (for fetching user data)
+
+## Thought Process
+The goal was to build a clean, modern, and intuitive UI that lets users search for any GitHub profile and get the most important data at a glance. I focused on keeping the component structure clean, using hooks for state management, and ensuring smooth user experience with clear loading/error states.
+
+
+
+## Challenges Faced
+1. Handling API errors gracefully, such as when the user doesn't exist.
+
+2. Ensuring the UI is responsive and looks good on both small and large screens.
+
+3. Implementing smooth state management using React hooks and functional components.
+
