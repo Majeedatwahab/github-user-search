@@ -32,7 +32,7 @@ A sleek and responsive GitHub user search app built with **Next.js** and **TypeS
 
    ```bash
    npm start
-   ```
+ ```
 
 5. Open your browser and go to `http://localhost:3000` to see the app in action.
 
