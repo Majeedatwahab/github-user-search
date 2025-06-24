@@ -23,6 +23,7 @@ export default function SearchBar() {
       setUser(await response.json());
       setSearch("");
     } catch (err) {
+      console.error(err); // Log the error for debugging
       setError("User not found. Please try again.");
       setUser(null);
     } finally {

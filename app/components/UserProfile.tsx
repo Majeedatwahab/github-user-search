@@ -1,5 +1,6 @@
 import { FolderGit2 } from "lucide-react";
 import { Users } from "lucide-react";
+import Image from "next/image";
 
 interface GitHubUser {
     login: string;
@@ -15,7 +16,7 @@ export default function UserProfile({ user }: { user: GitHubUser }) {
 
     return (
         <div className="flex flex-col items-center justify-center mt-8 mb-8 p-4 bg-white/5 rounded-lg shadow-lg backdrop-blur-sm ring-1 ring-white/10 w-full max-w-md mx-auto overflow-hidden">
-            <img
+            <Image
                 src={user.avatar_url}
                 alt={`Avatar of ${user.login}`}
                 className="w-32 h-32 rounded-full mb-4"
